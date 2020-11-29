@@ -313,6 +313,21 @@ typedef struct clientInfo_s {
 
 	int			superSmoothTime; //do crazy amount of smoothing
 
+	//[2] array cause there are 2 sabers :)
+
+	vec3_t	rgb1;
+	vec3_t	rgb2;
+	vec3_t	PimpColorFrom[2];
+	vec3_t	PimpColorTo[2];
+	int		PimpStartTime[2];
+	int		PimpEndTime[2];
+	vec3_t  ScriptedColors[10][2];
+	int		ScriptedTimes[10][2];
+	int		ScriptedNum[2]; //number of colors
+	int		ScriptedActualNum[2];
+	int		ScriptedStartTime[2];
+	int		ScriptedEndTime[2];
+
 } clientInfo_t;
 
 //rww - cheap looping sound struct
@@ -1141,6 +1156,13 @@ typedef struct cgMedia_s {
 	qhandle_t	purpleSaberCoreShader;
 	qhandle_t	saberBlurShader;
 	qhandle_t	swordTrailShader;
+
+	qhandle_t SaberTrailShader;
+ 	qhandle_t SaberBladeShader;
+ 	qhandle_t SaberEndShader;
+
+	qhandle_t	rgbSaberGlowShader;
+	qhandle_t	rgbSaberCoreShader;
 
 	qhandle_t	yellowDroppedSaberShader;
 
