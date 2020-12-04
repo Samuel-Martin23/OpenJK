@@ -405,16 +405,6 @@ void UI_DoSFXSaber( vec3_t blade_muz, vec3_t blade_dir, float lengthMax, float r
 			blade = re.RegisterShader( "gfx/effects/sabers/blue_line" );
 			SaberBladeShader = re.RegisterShader("SFX_Sabers/saber_blade");
 			break;
-		case SABER_UNSTABLE_RED:
-			glow = re.RegisterShader("gfx/effects/sabers/unstable_red_glow");
-			blade = re.RegisterShader("gfx/effects/sabers/unstable_red_line");
-			SaberBladeShader = re.RegisterShader("SFX_Sabers/saber_blade_unstable");
-			break;
-		case SABER_BLACK:
-			glow = re.RegisterShader( "gfx/effects/sabers/black_glow" );
-			blade = re.RegisterShader( "gfx/effects/sabers/black_line" );
-			SaberBladeShader = re.RegisterShader("SFX_Sabers/saber_blade_black");
-			break;
 		default://SABER_RGB
 			glow = re.RegisterShader( "gfx/effects/sabers/rgb_glow" );
 			blade = re.RegisterShader( "gfx/effects/sabers/rgb_line" );
